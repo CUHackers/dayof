@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import moment from 'moment';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.sass']
 })
 export class AppComponent {
-  title = 'cudayof';
+
+  timetohackathon = moment.duration(moment().diff(moment("January 22, 2020"))).humanize()
 }
