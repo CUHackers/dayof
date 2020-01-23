@@ -1,0 +1,37 @@
+[
+    {
+      "Title": "The AWS Challenge (4):",
+      "Prompt": "Design, build, or code your best hack that makes use of two services from AWS’s broad suite of tools.",
+      "Prize": "The Amazon Echo Show"
+    },
+    {
+        "Title": "The Splunk Challenge (8):",
+        "Prompt": "Finish at the top of the leaderboard in either session of Splunk’s reverse capture-the-flag competition.",
+        "Prize": "Chromebook or Mystery Prize"
+    },
+    {
+        "Title": "Best Hardware (4):",
+        "Prompt": "For the best hack that makes use of hardware on demo day.",
+        "Prize": "Raspberry Pi + Drone"
+    },
+    {
+        "Title": "Best Use of Data (4):",
+        "Prompt": "For the hack with the best data visualization or model. Bonus points for attending the BioInformatics session!",
+        "Prize": "Bose Soundproof Headphones"
+    },
+    {
+        "Title": "Beginner Hacker Award (4):",
+        "Prompt": "For a team of newcomers who show admirable spirit and a desire to learn.",
+        "Prize": "Amazon Firestick"
+    },
+    {
+        "Title": "Hack for the People (4):",
+        "Prompt": "For the best hack that promotes social good.",
+        "Prize": "Fitbit + Wireless Headphones"
+    },
+    {
+        "Title": "The Ingenuity Hack (4):",
+        "Prompt": "For the top wildcard “how did they do that?!” hack.",
+        "Prize": "Waterproof Bluetooth Speaker + Portable Charger"
+    }
+  ]

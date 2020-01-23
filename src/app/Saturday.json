@@ -1,0 +1,47 @@
+[
+    {
+      "Start Time": "9:00 AM",
+      "End Time": "1:00 PM",
+      "Title": "Check in"
+    },
+    {
+      "Start Time": "10:00 AM",
+      "End Time": "10:30 AM",
+      "Title": "Opening Ceremony"
+    },
+    {
+        "Start Time": "10:30 AM",
+        "End Time": "10:30 AM",
+        "Title": "Hacking Begins"
+    },
+    {
+      "Start Time": "10:30 AM",
+      "End Time": "11:00 AM",
+      "Title": "Team Formation"
+    },
+    {
+      "Start Time": "11:00 AM",
+      "End Time": "4:00 PM",
+      "Title": "Partnership Fair"
+    },
+    {
+        "Start Time": "11:00 AM",
+        "End Time": "8:00 PM",
+        "Title": "Workshops"
+    },
+    {
+      "Start Time": "12:00 PM",
+      "End Time": "2:00 PM",
+      "Title": "Lunch"
+    },
+    {
+      "Start Time": "4:00 PM",
+      "End Time": "5:00 PM",
+      "Title": "Lightning Talks"
+    },
+    {
+      "Start Time": "6:00 PM",
+      "End Time": "8:00 PM",
+      "Title": "Dinner"
+    }
+  ]

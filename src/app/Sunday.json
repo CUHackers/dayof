@@ -1,0 +1,32 @@
+[
+    {
+      "Start Time": "12:00 AM",
+      "End Time": "1:00 AM",
+      "Title": "Midnight Snack"
+    },
+    {
+      "Start Time": "7:00 AM",
+      "End Time": "9:00 AM",
+      "Title": "Breakfast"
+    },
+    {
+      "Start Time": "10:00 AM",
+      "End Time": "10:00 AM",
+      "Title": "Submissions Due"
+    },
+    {
+      "Start Time": "11:00 AM",
+      "End Time": "12:30 PM",
+      "Title": "Demos"
+    },
+    {
+      "Start Time": "12:30 PM",
+      "End Time": "1:30 PM",
+      "Title": "Lunch"
+    },
+    {
+      "Start Time": "1:30 PM",
+      "End Time": "2:30 PM",
+      "Title": "Closing Ceremony"
+    }
+  ]
