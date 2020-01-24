@@ -5,6 +5,9 @@ html, body
   -moz-box-sizing: border-box
   box-sizing: border-box
 
+.container-fluid
+  display: flex
+
 #main
   background-image: url("/assets/bg.svg")
   background-repeat: no-repeat
@@ -15,17 +18,35 @@ button
     border-radius: 40px !important
 
 // general font sizes
+
 h1,h2,h3,h4,h5,h6,button
   font-family: titling-gothic-fb
   font-weight: 400
+  line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 150px) / (1600 - 150)))
 h4
-  font-size: 140px
+  font-size: calc(65px + (140 - 65) * ((100vw - 150px) / (1600 - 150)))
 h5
-  font-size: 60px
+  font-size: calc(20px + (60 - 20) * ((100vw - 150px) / (1600 - 150)))
 h6
-  font-size: 40px
+  font-size: calc(10px + (45 - 10) * ((100vw - 150px) / (1600 - 150)))
   margin-top: 20px
+
 // specific font sizes
+
+#jumbotron h6
+  font-size: calc(28px + (200 - 28) * ((100vw - 150px) / (1600 - 150)))
+#jumbotron h1
+  font-size: calc(25px + (180 - 25) * ((100vw - 150px) / (1600 - 150)))
+#prizes h5
+  font-size: calc(16px + (28 - 16) * ((100vw - 150px) / (1600 - 150)))
+#prizes span
+  font-size: calc(11px + (18 - 11) * ((100vw - 150px) / (1600 - 150)))
+#emergencycontacts h4
+  font-size: calc(40px + (130 - 40) * ((100vw - 150px) / (1600 - 150)))
+#emergencycontacts h5
+  font-size: calc(30px + (50 - 30) * ((100vw - 150px) / (1600 - 150)))
+#emergencycontacts h6
+  font-size: calc(30px + (58 - 30) * ((100vw - 150px) / (1600 - 150)))
 #time
   font-size: 340px
 #countdown
@@ -36,23 +57,37 @@ h6
   font-size: 40px
 
 // positioning for sections
+
 #jumbotron
   position: absolute
-  top: 340px
-  left: 300px
+  top: 200px
+  text-align: center
 #button
   position: absolute
   top: 1250px
 #table1
   position: absolute
-  top: 1850px
+  top: 1500px
 #table2
   position: absolute
-  top: 3300px
+  top: 3200px
   margin-top: 100px
 #prizes
   position: absolute
   top: 4900px
 #emergencycontacts
   position: absolute
-  top: 6700px
+  top: 6500px
+#contact
+  position: absolute
+  top: 8350px
+  align: center
+  border: 1px solid rgba(255, 0, 0, 0)
+#contact-buttons
+  margin-left: calc(20px + (500 - 20) * ((100vw - 200px) / (1600 - 200)))
+.contact-link:hover > span > .contact-circle
+  transform: scale(2)
+  transition: .5s ease-in-out
+.contact-link:hover > span > .contact-logo
+  transform: scale(2)
+  transition: .5s ease-in-out

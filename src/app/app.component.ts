@@ -10,7 +10,7 @@ import * as prizes from './Prizes.json';
   styleUrls: ['./app.component.sass']
 })
 export class AppComponent implements OnInit {
-  timetohackathon = moment.duration(moment().diff(moment("January 22, 2020"))).humanize()
+  timetohackathon = moment.duration(moment().diff(moment("January 24, 2020"))).humanize()
   saturday = (saturday as any).default;
   sunday = (sunday as any).default;
   prizes = (prizes as any).default;
