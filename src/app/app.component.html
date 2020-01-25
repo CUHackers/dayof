@@ -1,111 +1,118 @@
 <body>
-<div id="main" class="row">
-<div class="container-fluid" class="col-10 mx-auto">
+    <div id="main" class="row">
+        <div class="container-fluid" class="col-10 mx-auto">
 
-  <div class="navbar navbar-primary py-5"></div>
+            <div class="navbar navbar-primary py-5"></div>
 
-  <div id="jumbotron">
-    <div class="row">
-      <div class="col">
-        <h6 id="countdown" class="text-warning">Countdown to Cuhackit!</h6>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col">
-        <h1 id="time" class="text-info">{{timetohackathon}}</h1>
-      </div>
-    </div>
-  </div>
+            <div id="jumbotron">
+                <div class="row">
+                    <div class="col">
+                        <h6 id="countdown" class="text-warning">Countdown to Cuhackit!</h6>
+                    </div>
+                </div>
+                <div class="row py-3"></div>
+                <div class="row">
+                    <div class="col">
+                        <h1 id="time" class="text-info">{{timetohackathon}}</h1>
+                    </div>
+                </div>
+            </div>
 
-  <div id="button">
-    <button class="btn btn-danger text-light p-5" id="btntext">
+            <div id="button">
+                <button class="btn btn-danger text-light p-5" id="btntext">
       <a href="https://drive.google.com/file/d/1WpFwXkYDpMcapNRmia9SEg2edi7nY1wK/view">Click here for our <br> <span id="btntext2">Hacker Guide!</span></a>
     </button>
-  </div>
+            </div>
 
-  <div id="table1">
-    <h4 class="text-warning">Saturday</h4>
-    <div *ngFor="let event of saturday;">
-      <div class="row">
-        <div class="col">
-          <h6 class="my-5 text-primary">{{event['Start Time'] + "-" + event['End Time']}}</h6>
-        </div>
-        <div class="col">
-          <h6 class="my-5 text-primary font-weight-bold">{{event.Title}}</h6>
-        </div>
-      </div>
-    </div>
-  </div>
+            <div id="table1">
+                <h4 class="text-warning">Saturday</h4>
+                <div *ngFor="let event of saturday;">
+                    <div class="row">
+                        <div class="col">
+                            <h6 class="my-4 text-primary">{{event['Start Time'] + "-" + event['End Time']}}</h6>
+                        </div>
+                        <div class="col">
+                            <h6 class="my-4 text-primary font-weight-bold">{{event.Title}}</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-  <div id="table2">
-    <h4 class="text-warning">Sunday</h4>
-    <div *ngFor="let event2 of sunday;">
-      <div class="row">
-        <div class="col">
-          <h6 class="my-5 text-primary">{{event2['Start Time'] + "-" + event2['End Time']}}</h6>
-        </div>
-        <div class="col">
-          <h6 class="my-5 text-primary font-weight-bold">{{event2.Title}}</h6>
-        </div>
-      </div>
-    </div>
-  </div>
+            <div id="table2">
+                <h4 class="text-warning">Sunday</h4>
+                <div *ngFor="let event2 of sunday;">
+                    <div class="row">
+                        <div class="col">
+                            <h6 class="my-4 text-primary">{{event2['Start Time'] + "-" + event2['End Time']}}</h6>
+                        </div>
+                        <div class="col">
+                            <h6 class="my-4 text-primary font-weight-bold">{{event2.Title}}</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-  <div id="prizes">
-    <h4 style="margin-bottom: 30px;" class="text-warning">Prizes</h4>
-    <div *ngFor="let prize of prizes;let i = index">
-      <div class="row">
-          <div class="col" style="margin-top: 20px;">
-              <h5 class="text-primary">{{prize.Title}} <span class="text-warning">{{prize.Prompt}}</span></h5> 
-              <h5 class="text-primary">Prize: <span class="text-warning">{{prize.Prize}}</span></h5>
-          </div>
-        </div>
-      </div>
-  </div>
+            <div id="prizes">
+                <h4 style="margin-bottom: 30px;" class="text-warning">Prizes</h4>
+                <div *ngFor="let prize of prizes;let i = index">
+                    <div class="row">
+                        <div class="col" style="margin-top: 20px;">
+                            <h5 class="text-primary">{{prize.Title}} <span class="text-warning">{{prize.Prompt}}</span></h5>
+                            <h5 class="text-primary">Prize: <span class="text-warning">{{prize.Prize}}</span></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-  <div id="emergencycontacts">
-    <h4 class="text-warning">Emergency Contacts</h4>
-    <div class="row">
-      <h6>Please contact 911 immediately in case of an emergency.</h6>
-      <h6>Below are other emergency resources:</h6>
-      <div class="col">
-        <div>
-          <h5 style="margin-top: 30px;" class="text-primary">CUPD: <span class="text-warning">(864-656-2222)</span></h5>
-        </div>
-        <div>
-          <h5 style="margin-top: 30px;"class="text-primary">Oconee Memorial Hospital: <span class="text-warning">(864-482-3100)</span></h5>
-        </div>
-        <div>
-          <h5 style="margin-top: 30px;" class="text-primary">Insomnia Cookies: <span class="text-warning">(864) 835-8960</span></h5>
-        </div>
-      </div>
-    </div>
-  </div>
+            <div id="emergencycontacts">
+                <h4 class="text-warning">Emergency Contacts</h4>
+                <div class="py-2"></div>
+                <div class="row">
+                    <div class="col">
+                        <h6>Please contact <span class="text-warning">911</span> immediately in case of an emergency.</h6>
+                        <h6>Below are other emergency resources:</h6>
 
-  <div id="contact">
-		<div id="contact-buttons" class="stick d-flex w-50 justify-content-around">
-			<a class="contact-link" href="mailto:cuhackers@g.clemson.edu">
-				<span class="fa-stack fa-2x">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div>
+                            <h5 style="margin-top: 30px;" class="text-primary">CUPD: <span class="text-warning">(864-656-2222)</span></h5>
+                        </div>
+                        <div>
+                            <h5 style="margin-top: 30px;" class="text-primary">Oconee Memorial Hospital: <span class="text-warning">(864-482-3100)</span></h5>
+                        </div>
+                        <div>
+                            <h5 style="margin-top: 30px;" class="text-primary">Insomnia Cookies: <span class="text-warning">(864) 835-8960</span></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="contact">
+                <div id="contact-buttons" class="stick d-flex w-50 justify-content-around">
+                    <a class="contact-link" href="mailto:cuhackers@g.clemson.edu">
+                        <span class="fa-stack fa-2x">
 				    <i class="fa fa-circle fa-stack-2x contact-circle"></i>
 				    <i class="fa fa-envelope fa-stack-1x fa-inverse contact-logo"></i>
 				</span>
-      </a>
-			<a class="contact-link" href="https://twitter.com/cuhackit?lang=en">
-				<span class="fa-stack fa-2x">
+                    </a>
+                    <a class="contact-link" href="https://twitter.com/cuhackit?lang=en">
+                        <span class="fa-stack fa-2x">
 				    <i class="fa fa-circle fa-stack-2x contact-circle"></i>
 				    <i class="fa fa-twitter fa-stack-1x fa-inverse contact-logo"></i>
 				</span>
-			</a>
-			<a class="contact-link" href="https://www.instagram.com/cuhackit/?hl=en">
-				<span class="fa-stack fa-2x">
+                    </a>
+                    <a class="contact-link" href="https://www.instagram.com/cuhackit/?hl=en">
+                        <span class="fa-stack fa-2x">
 				    <i class="fa fa-circle fa-stack-2x contact-circle" ></i>
 				    <i class="fa fa-instagram fa-stack-1x fa-inverse contact-logo"></i>
 				</span>
-			</a>
+                    </a>
 
-		</div>
-	</div>
+                </div>
+            </div>
 
-</div>
-</div>
+        </div>
+    </div>
 </body>
