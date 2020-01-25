@@ -12,6 +12,9 @@
     "importHelpers": true,
     "target": "es2015",
     "resolveJsonModule": true,
+    "types": [
+      "@types/moment-duration-format"
+    ],
     "typeRoots": [
       "node_modules/@types"
     ],

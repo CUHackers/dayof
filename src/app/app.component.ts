@@ -1,8 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import moment from 'moment';
+import * as moment from 'moment';
 import * as saturday from './Saturday.json';
 import * as sunday from './Sunday.json';
 import * as prizes from './Prizes.json';
+
+import 'moment-duration-format';
 
 @Component({
   selector: 'app-root',
@@ -10,7 +12,12 @@ import * as prizes from './Prizes.json';
   styleUrls: ['./app.component.sass']
 })
 export class AppComponent implements OnInit {
-  timetohackathon = moment.duration(moment().diff(moment("January 24, 2020"))).humanize()
+  // timetohackathon = moment.duration(moment().diff(moment("2020-01-25 10:00:00").add(0,"days"))).format("hh:mm:ss");
+
+  timetohackathon = moment() < moment("2020-01-25 10:00:00") ?
+    moment.duration(moment("2020-01-25 10:00:00").diff(moment())).format("h [Hours]:mm [Minutes]") : 
+    moment.duration(moment("2020-01-26 10:00:00").diff(moment())).format("h [Hours]:mm [Minutes]");
+
   saturday = (saturday as any).default;
   sunday = (sunday as any).default;
   prizes = (prizes as any).default;
