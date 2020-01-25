@@ -15,8 +15,8 @@ export class AppComponent implements OnInit {
   // timetohackathon = moment.duration(moment().diff(moment("2020-01-25 10:00:00").add(0,"days"))).format("hh:mm:ss");
 
   timetohackathon = moment() < moment("2020-01-25 10:00:00") ?
-    moment.duration(moment("2020-01-25 10:00:00").diff(moment())).format("h [Hours]:mm [Minutes]") : 
-    moment.duration(moment("2020-01-26 10:00:00").diff(moment())).format("h [Hours]:mm [Minutes]");
+    moment.duration(moment("2020-01-25 10:00:00").diff(moment())).format("h [Hours], m [Minutes]") : 
+    moment.duration(moment("2020-01-26 10:00:00").diff(moment())).format("h [Hours], m [Minutes]");
 
   saturday = (saturday as any).default;
   sunday = (sunday as any).default;
